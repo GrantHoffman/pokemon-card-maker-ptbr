@@ -1,0 +1,283 @@
+{
+  "baseSets": [
+    {
+      "id": 1,
+      "shortName": "SS",
+      "name": "Sword & Shield",
+      "subSets": [
+        1,
+        2
+      ]
+    }
+  ],
+  "variations": [
+    {
+      "id": 1,
+      "shortName": "Dynamax",
+      "name": "Dynamax",
+      "subtypes": [5],
+      "rarities": [4]
+    },
+    {
+      "id": 2,
+      "shortName": "Gigantamax",
+      "name": "Gigantamax",
+      "subtypes": [5],
+      "rarities": [4]
+    }
+  ],
+  "rarities": [
+    {
+      "id": 1,
+      "shortName": "Promo",
+      "name": "Promo"
+    },
+    {
+      "id": 2,
+      "shortName": "FA",
+      "name": "Full Art",
+      "hasNameOutline": true
+    },
+    {
+      "id": 3,
+      "shortName": "Gold_FA",
+      "name": "Golden Full Art",
+      "hasNameOutline": true,
+      "hasBlackTopText": true
+    },
+    {
+      "id": 4,
+      "shortName": "Rainbow",
+      "name": "Rainbow"
+    }
+  ],
+  "subtypes": [
+    {
+      "id": 1,
+      "shortName": "Basic",
+      "name": "Basic",
+      "types": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "hasVariations": false,
+      "hasPrevolve": false,
+      "hasPokedexEntry": true,
+      "rarities": [1]
+    },
+    {
+      "id": 2,
+      "shortName": "Stage1",
+      "name": "Stage 1",
+      "types": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "hasVariations": false,
+      "hasPrevolve": true,
+      "hasPokedexEntry": true,
+      "rarities": []
+    },
+    {
+      "id": 3,
+      "shortName": "Stage2",
+      "name": "Stage 2",
+      "types": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "hasVariations": false,
+      "hasPrevolve": true,
+      "hasPokedexEntry": true,
+      "rarities": []
+    },
+    {
+      "id": 4,
+      "shortName": "V",
+      "name": "V",
+      "types": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "hasVariations": false,
+      "hasPrevolve": false,
+      "noDescription": true,
+      "hasPokedexEntry": false,
+      "hasWhiteTopText": true,
+      "hasVStyle": true,
+      "hasVSymbol": true,
+      "rarities": [2, 3]
+    },
+    {
+      "id": 5,
+      "shortName": "VMax",
+      "name": "VMax",
+      "types": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "hasVariations": true,
+      "hasPrevolve": true,
+      "noDescription": true,
+      "hasPokedexEntry": false,
+      "hasWhiteTopText": true,
+      "hasVStyle": true,
+      "hasVMaxSymbol": true,
+      "hasNameOutline": true,
+      "rarities": []
+    },
+    {
+      "id": 6,
+      "shortName": "Tool",
+      "name": "Tool",
+      "types": [10],
+      "hasVariations": false,
+      "rarities": []
+    }
+  ],
+  "sets": [
+    {
+      "id": 1,
+      "number": 87,
+      "shortName": "Sword_and_Shield",
+      "name": "Base"
+    },
+    {
+      "id": 2,
+      "number": 88,
+      "shortName": "Rebel_Clash",
+      "name": "Rebel Clash"
+    },
+    {
+      "id": 3,
+      "number": 0,
+      "shortName": "Promo",
+      "name": "Promo"
+    }
+  ],
+  "rotations": [
+    {
+      "id": 1,
+      "shortName": "D",
+      "name": "D"
+    }
+  ],
+  "types": [
+    {
+      "id": 1,
+      "shortName": "Grass",
+      "name": "Grass",
+      "supertype": "Pokemon",
+      "hasSubtypes": true,
+      "subtypeOptional": false,
+      "rarities": []
+    },
+    {
+      "id": 2,
+      "shortName": "Fire",
+      "name": "Fire",
+      "supertype": "Pokemon",
+      "hasSubtypes": true,
+      "subtypeOptional": false,
+      "rarities": []
+    },
+    {
+      "id": 3,
+      "shortName": "Water",
+      "name": "Water",
+      "supertype": "Pokemon",
+      "hasSubtypes": true,
+      "subtypeOptional": false,
+      "rarities": []
+    },
+    {
+      "id": 4,
+      "shortName": "Lightning",
+      "name": "Lightning",
+      "supertype": "Pokemon",
+      "hasSubtypes": true,
+      "subtypeOptional": false,
+      "rarities": []
+    },
+    {
+      "id": 5,
+      "shortName": "Psychic",
+      "name": "Psychic",
+      "supertype": "Pokemon",
+      "hasSubtypes": true,
+      "subtypeOptional": false,
+      "rarities": []
+    },
+    {
+      "id": 6,
+      "shortName": "Fighting",
+      "name": "Fighting",
+      "supertype": "Pokemon",
+      "hasSubtypes": true,
+      "subtypeOptional": false,
+      "rarities": []
+    },
+    {
+      "id": 7,
+      "shortName": "Dark",
+      "name": "Dark",
+      "supertype": "Pokemon",
+      "hasSubtypes": true,
+      "subtypeOptional": false,
+      "rarities": [],
+      "hasWhiteText": true
+    },
+    {
+      "id": 8,
+      "shortName": "Metal",
+      "name": "Metal",
+      "supertype": "Pokemon",
+      "hasSubtypes": true,
+      "subtypeOptional": false,
+      "rarities": []
+    },
+    {
+      "id": 9,
+      "shortName": "Colorless",
+      "name": "Colorless",
+      "supertype": "Pokemon",
+      "hasSubtypes": true,
+      "subtypeOptional": false,
+      "rarities": []
+    },
+    {
+      "id": 10,
+      "shortName": "Item",
+      "name": "Item",
+      "supertype": "Trainer",
+      "hasSubtypes": true,
+      "subtypeOptional": true,
+      "rarities": []
+    },
+    {
+      "id": 11,
+      "shortName": "Supporter",
+      "name": "Supporter",
+      "supertype": "Trainer",
+      "hasSubname": true,
+      "rarities": []
+    },
+    {
+      "id": 12,
+      "shortName": "Base",
+      "name": "Base",
+      "supertype": "Energy",
+      "rarities": []
+    },
+    {
+      "id": 13,
+      "shortName": "Special",
+      "name": "Special",
+      "supertype": "Energy",
+      "hasSpecialStyle": true,
+      "rarities": []
+    }
+  ],
+  "rarityIcons": [
+    {
+      "id": 1,
+      "shortName": "common",
+      "name": "Common"
+    },
+    {
+      "id": 2,
+      "shortName": "uncommon",
+      "name": "Uncommon"
+    },
+    {
+      "id": 3,
+      "shortName": "rare",
+      "name": "Rare"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "short_name": "Pokémon Card Maker",
+  "name": "Pokémon Card Maker",
+  "icons": [
+    {
+      "src": "logo58.png",
+      "type": "image/png",
+      "sizes": "58x58"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#d35337",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,111 @@
+@mixin breakpoint($maxWidth, $minWidth: 0) {
+  @media only screen and (min-width: $minWidth) and (max-width: $maxWidth) {
+    @content;
+  }
+}
+
+@mixin outline($color, $width: .6) {
+  text-shadow:
+    -#{$width}px -#{$width}px 0 $color,
+     0 -#{$width}px 0 $color,
+     #{$width}px -#{$width}px 0 $color,
+     #{$width}px 0 0 $color,
+     #{$width}px #{$width}px 0 $color,
+     0 #{$width}px 0 $color,
+    -#{$width}px #{$width}px 0 $color,
+    -#{$width}px 0 0 $color;
+}
+
+// Pokemon
+@mixin Name {
+  font-family: 'Gill Sans Std', sans-serif;
+  font-weight: bold;
+  letter-spacing: .01em;
+}
+
+@mixin Hitpoints {
+  font-family: 'Gill Sans Std Bold', sans-serif;
+  font-weight: bolder; // Doesnt get bold enough yet
+}
+
+@mixin HitpointNumerals {
+  font-family: 'Futura LT Medium', sans-serif;
+  font-weight: bold;
+}
+
+@mixin PrevolveName {
+  font-family: 'Frutiger LT Std', sans-serif;
+  font-style: italic;
+  font-size: .65em;
+}
+
+@mixin PokedexEntry {
+  font-family: 'Frutiger LT Std', sans-serif;
+  font-size: .56em;
+  text-align: center;
+  letter-spacing: .03em;
+}
+
+@mixin MoveName {
+  font-family: 'Gill Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: -.04em;
+}
+
+@mixin MoveText {
+  font-family: 'Gill Sans', sans-serif;
+  text-align: justify;
+}
+
+@mixin MoveDamage {
+  font-family: 'Futura LT Medium', sans-serif;
+  font-weight: bold;
+  letter-spacing: .02em;
+}
+
+@mixin PokemonDescription {
+  font-family: 'Optima', sans-serif;
+  font-size: .77em;
+  text-align: right;
+  line-height: 1.1;
+  letter-spacing: -.034em;
+}
+
+
+@mixin TrainerSubname {
+  font-family: 'Gill Sans Std', sans-serif;
+  font-style: italic;
+  font-size: .98em;
+  color: #6b6c6e;
+}
+
+@mixin TypeBar {
+  font-family: 'Futura LT Medium', sans-serif;
+  font-size: 1.05em;
+  font-weight: bold;
+}
+
+@mixin TrainerDescription {
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 1em;
+  text-align: justify;
+  line-height: 1.45;
+}
+
+@mixin IllustratorCredit {
+  font-family: 'Futura Std', sans-serif;
+  font-size: .6em;
+  font-style: oblique;
+}
+
+@mixin SetNumerals {
+  font-family: 'Frutiger Std', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: .69em;
+}
+
+@mixin SpecialChars {
+  font-family: 'Pokemon Web Font', sans-serif !important;
+}

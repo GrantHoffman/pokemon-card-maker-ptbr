@@ -1,0 +1,417 @@
+@import 'styles/config';
+
+$moveNameLeft: 29.5%;
+
+@value moveNameLeft: #{$moveNameLeft};
+
+.ptcgText {
+  @include SpecialChars;
+}
+
+.italicText {
+  font-style: italic;
+}
+
+.card {
+  user-select: none;
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   height: 100%;
+  //   width: 100%;
+  //   background-image: url('https://pkmncards.com/wp-content/uploads/en_US-Promo_SWSH-SWSH025-garbodor.jpg');
+  //   background-size: cover;
+  //   opacity: .5;
+  // }
+
+  &.whiteText {
+    color: $white !important;
+  }
+}
+
+.name {
+  @include Name;
+  white-space: pre;
+  position: absolute;
+  top: 7.2%;
+  left: 6.7%;
+  font-size: 2em;
+
+  &Pokemon {
+    left: 20%;
+    top: 3.3%;
+    font-size: 1.9em;
+    display: flex;
+    align-items: center;
+  }
+
+  &Outline {
+    @include outline($white);
+    color: $black;
+  }
+
+  &Icon {
+    height: 1em;
+    margin-left: .1em;
+  }
+}
+
+.hitpoints {
+  @include HitpointNumerals;
+
+  &Wrapper {
+    position: absolute;
+    top: 4%;
+    right: 12.9%;
+
+    &V {
+      color: $white;
+      @include outline($black);
+      top: 3.5%;
+      right: 14%;
+      font-size: 1.2em;
+    }
+  }
+
+  &HP {
+    @include Hitpoints;
+    font-size: .6em;
+    margin-right: 2px;
+  }
+
+  font-size: 1.6em;
+}
+
+.prevolveName {
+  @include PrevolveName;
+  position: absolute;
+  top: 9.9%;
+  left: 17%;
+  width: 15em;
+  color: $black;
+}
+
+.subname {
+  @include TrainerSubname;
+  position: absolute;
+  top: 9.2%;
+  right: 6.7%;
+}
+
+.pokedexEntry {
+  @include PokedexEntry;
+  color: $black;
+  position: absolute;
+  top: 48.25%;
+  left: 10%;
+  width: 80%;
+}
+
+.movesWrapper {
+  position: absolute;
+  top: 54.2%;
+  left: 5.4%;
+  height: 29.5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+
+  &V {
+    justify-content: flex-end;
+    height: 31%;
+    @include outline($white);
+    color: $black;
+    top: 53%;
+  }
+}
+
+.ability {
+  &NameWrapper {
+    color: #a30000;
+    display: flex;
+    align-items: center;
+    height: .95em;
+    font-size: 1.3em;
+    margin-right: 5px;
+  }
+
+  &Icon {
+    height: 100%;
+    margin-right: 6px;
+
+    &V {
+      height: 110%;
+    }
+  }
+
+  &Text {
+    &, & > * {
+      @include MoveText;
+      width: 93%;
+      margin: 4px auto 0;
+      line-height: 1.2;
+    }
+  }
+}
+
+.move {
+  margin: auto 0;
+
+  &Multiple {
+    margin-top: 1.6em;
+    margin-bottom: 1em;
+  }
+
+  &V {
+    margin: 0;
+    margin-top: .8em;
+  }
+
+  &Name {
+    &Wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-size: 1.3em;
+      width: 95.5%;
+      margin: 0 auto;
+    }
+
+    @include MoveName;
+    width: 69%;
+    position: absolute;
+    left: $moveNameLeft;
+
+    &Shoved {
+      left: 35.5%;
+    }
+  }
+
+  &Cost {
+    display: flex;
+    align-items: center;
+    margin-bottom: .2em;
+  }
+
+  &Energy {
+    width: 1.2em;
+    margin-right: .1em;
+  }
+
+  &Damage {
+    @include MoveDamage;
+    margin-left: auto;
+    margin-right: 6px;
+  }
+
+  &Text {
+    &, & > * {
+      @include MoveText;
+      width: 94%;
+      margin: 1.5px auto 0;
+      line-height: 1.2;
+      min-height: 1.8em;
+    }
+
+    &V {
+      min-height: unset;
+    }
+  }
+}
+
+.typeBar {
+  @include TypeBar;
+  color: $black;
+  position: absolute;
+  bottom: 11.5%;
+  left: 0;
+  height: 2.6%;
+  width: 100%;
+  display: flex;
+
+  &.whiteText {
+    color: $white;
+  }
+}
+
+.weakness {
+  display: flex;
+  margin-left: 15.5%;
+  width: 14%;
+
+  &Icon {
+    height: 100%;
+    margin-right: 4px;
+  }
+}
+
+.resistance {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 42%;
+  height: 100%;
+
+  &Icon {
+    height: 100%;
+    margin-right: 4px;
+  }
+}
+
+.retreatCost {
+  margin-right: 7%;
+  margin-left: auto;
+  width: 21%;
+
+  &Icon {
+    height: 100%;
+  }
+}
+
+.illustrator {
+  @include IllustratorCredit;
+  position: absolute;
+  bottom: 7%;
+  left: 6.7%;
+}
+
+.setIcon {
+  position: absolute;
+  bottom: 3.6%;
+  left: 6.3%;
+  height: 1.2em;
+}
+
+.setNumber {
+  @include SetNumerals;
+  position: absolute;
+  bottom: 3.7%;
+  left: 16%;
+}
+
+.rotation {
+  position: absolute;
+  bottom: 3.6%;
+  left: 12.2%;
+  height: 1.1em;
+}
+
+.rarityIcon {
+  height: .8em;
+  margin-left: 3px;
+}
+
+.cardInfoWhite {
+  &, & > * {
+    @include outline($white);
+    color: $black;
+  }
+}
+
+.description {
+  &Wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 60%;
+    left: 12.1%;
+    height: 18.7%;
+    width: 76%;
+
+    &Energy {
+      top: 69.7%;
+      width: 82.6%;
+      left: 8.5%;
+
+      .description {
+        line-height: 1.05;
+      }
+    }
+
+    &Pokemon {
+      top: unset;
+      left: unset;
+      bottom: 3.5%;
+      right: 6.5%;
+      height: 7%;
+      width: 59.5%;
+      justify-content: flex-end;
+
+      .description {
+        @include PokemonDescription;
+        white-space: unset;
+      }
+    }
+  }
+
+  @include TrainerDescription;
+  white-space: pre-line;
+}
+
+.prevolveImage {
+  &Wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 6.7%;
+    left: 4.5%;
+    height: 10%;
+    width: 11%;
+  }
+
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.image {
+  width: 100%;
+  position: relative;
+  z-index: -2;
+  vertical-align: middle;
+}
+
+.backgroundImage, .imageLayer1, .imageLayer2 {
+  position: absolute;
+  width: 100%;
+  max-height: 100%;
+  z-index: -100;
+  border-radius: 25px;
+}
+
+.backgroundImage {
+  max-width: 100%;
+  width: 100%;
+  height: calc(100% - 10px);
+  border-radius: 27px;
+}
+
+.imageLayer1 {
+  z-index: -75;
+}
+
+.imageLayer2 {
+  z-index: -1;
+  left: 0;
+}
+
+.typeImage {
+  box-sizing: content-box;
+  position: absolute;
+  border-radius: 100%;
+  right: 1.2em;
+  top: 1.25em;
+  height: 2em;
+  width: 2em;
+  border: 3px solid $white;
+  background-color: $white;
+
+  &Special {
+    top: 1.15em;
+    height: 1.8em;
+    width: 1.8em;
+  }
+}

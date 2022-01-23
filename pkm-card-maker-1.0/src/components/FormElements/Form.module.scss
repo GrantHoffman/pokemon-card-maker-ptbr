@@ -1,0 +1,53 @@
+@import 'styles/config';
+
+.input {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+
+  &.horizontal {
+    flex-direction: column;
+    justify-content: center;
+    align-items: unset;
+  }
+
+  &.horizontal &Field {
+    width: 100%;
+  }
+
+  &.horizontal &Label {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  &Label {
+    margin-right: 5px;
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+
+    &Button {
+      cursor: pointer;
+      margin-left: 5px;
+
+      &:hover {
+        color: $main;
+      }
+    }
+  }
+
+  &Field {
+    width: 60%;
+  }
+
+  &Textarea {
+    height: 100px;
+    resize: none;
+  }
+}
+
+.info {
+  font-style: italic;
+  font-size: .8em;
+  margin-bottom: 5px;
+}
